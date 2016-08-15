@@ -13,6 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="stylesheet" href="assets/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!-- Google Analytics -->
 		<script>
@@ -47,13 +49,18 @@
 					</section>
 
 				<!-- Two -->
-					<section id="two">
+					<section  id="two">
 						<!-- <h2>Recent Work</h2> -->
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/h11.jpg" alt="" /></a>
+								<a href="images/h02.jpg" rel="headshots" class="image fit thumb headshots"><img src="images/thumbs/thumb-h02.jpg" alt="" /></a>
+								<a href="images/h06.jpg" rel="headshots" class="image fit thumb headshots" style="display: none"><img src="images/h06.jpg" alt="" /></a>
+								<a href="images/h11.jpg" rel="headshots" class="image fit thumb headshots" style="display: none"><img src="images/h11.jpg" alt="" /></a>
+								<a href="images/h18.jpg" rel="headshots" class="image fit thumb headshots" style="display: none"><img src="images/h18.jpg" alt="" /></a>
+								<a href="images/h21.jpg" rel="headshots" class="image fit thumb headshots" style="display: none"><img src="images/h21.jpg" alt="" /></a>
+								<a href="images/h32.jpg" rel="headshots" class="image fit thumb headshots" style="display: none"><img src="images/h32.jpg" alt="" /></a>
 								<h3>Headshots</h3>
-								<p>Photos by Frank Chen.</p>
+								<p>Photography by Frank Chen.</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
@@ -61,25 +68,21 @@
 								<p>Film work 2013 - 2016.</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Acting Resumé</h3>
+								<a href="images/LeviJenningsResume.jpg" rel="resume" class="image fit thumb resume"><img src="images/thumbs/LeviJenningsResume.jpg" alt="" /></a>
+								<h3>Resume</h3>
 								<p>Last updated August 2016.</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<a href="images/stills/Hamlet_2.jpg" rel="stills" class="image fit thumb stills"><img src="images/thumbs/thumb-Hamlet_2.jpg" alt="" /></a>
+								<a href="images/stills/Hamlet_1.jpg" rel="stills" class="image fit thumb stills" style="display: none"><img src="images/stills/Hamlet_1.jpg" alt="" /></a>
+								<a href="images/stills/Waiting_For_Lefty_1.jpg" rel="stills" class="image fit thumb stills" style="display: none"><img src="images/stills/Waiting_For_Lefty_1.jpg" alt="" /></a>
+								<a href="images/stills/Waiting_For_Lefty_2.jpg" rel="stills" class="image fit thumb stills" style="display: none"><img src="images/stills/Waiting_For_Lefty_2.jpg" alt="" /></a>
+								<a href="images/stills/Kingdom_1.jpg" rel="stills" class="image fit thumb stills" style="display: none"><img src="images/stills/Kingdom_1.jpg" alt="" /></a>
+								<a href="images/stills/Kingdom_2.jpg" rel="stills" class="image fit thumb stills" style="display: none"><img src="images/stills/Kingdom_2.jpg" alt="" /></a>
 								<h3>Production Stills</h3>
 								<p>Theater and Film work 2013 - 2016.</p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
+							
 						</div>
 						<ul class="actions">
 							<li><a href="#" class="button">Full Portfolio</a></li>
@@ -89,7 +92,7 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<!-- <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p> -->
 						<div class="row">
 							<div class="8u 12u$(small)">
 								<form method="post" action="#">
@@ -107,13 +110,11 @@
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
+										Los Angeles, CA<br />
 									</li>
 									<li>
 										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										000-000-0000
+										323-673-1112
 									</li>
 									<li>
 										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
@@ -462,6 +463,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
+
+		<!-- fancybox -->
+			<script src="assets/js/fancybox/jquery.fancybox.js"></script>
+			<link rel="stylesheet" href="assets/js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+			<script type="text/javascript" src="assets/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+			<script type="text/javascript" src="assets/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+			<link rel="stylesheet" href="assets/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+			<script type="text/javascript" src="assets/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->

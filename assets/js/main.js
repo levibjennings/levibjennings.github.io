@@ -99,19 +99,91 @@
 			// Lightbox gallery.
 				$window.on('load', function() {
 
-					$('#two').poptrox({
-						caption: function($a) { return $a.next('h3').text(); },
-						overlayColor: '#2c2c2c',
-						overlayOpacity: 0.85,
-						popupCloserText: '',
-						popupLoaderText: '',
-						selector: '.work-item a.image',
-						usePopupCaption: true,
-						usePopupDefaultStyling: false,
-						usePopupEasyClose: false,
-						usePopupNav: true,
-						windowMargin: (skel.breakpoint('small').active ? 0 : 50)
+					// $('#two').poptrox({
+					// 	caption: function($a) { return $a.next('h3').text(); },
+					// 	overlayColor: '#2c2c2c',
+					// 	overlayOpacity: 0.85,
+					// 	popupCloserText: '',
+					// 	popupLoaderText: '',
+					// 	selector: '.work-item a.image',
+					// 	usePopupCaption: true,
+					// 	usePopupDefaultStyling: false,
+					// 	usePopupEasyClose: false,
+					// 	usePopupNav: true,
+					// 	windowMargin: (skel.breakpoint('small').active ? 0 : 50)
+					// });
+					$(".headshots").fancybox({
+						prevEffect	: 'none',
+						nextEffect	: 'none',
+						helpers	: {
+							title	: {
+								type: 'outside'
+							},
+							thumbs	: {
+								width	: 50,
+								height	: 50
+							},
+							overlay : {
+			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
+			        }
+						}
 					});
+					$(".stills").fancybox({
+						prevEffect	: 'none',
+						nextEffect	: 'none',
+						helpers	: {
+							title	: {
+								type: 'outside'
+							},
+							thumbs	: {
+								width	: 50,
+								height	: 50
+							},
+							overlay : {
+			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
+			        }
+						}
+					});
+					$(".stills").fancybox({
+						prevEffect	: 'none',
+						nextEffect	: 'none',
+						helpers	: {
+							title	: {
+								type: 'outside'
+							},
+							thumbs	: {
+								width	: 50,
+								height	: 50
+							},
+							overlay : {
+			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
+			        }
+						}
+					});
+					$(".resume").fancybox({
+						prevEffect	: 'none',
+						nextEffect	: 'none',
+						helpers	: {
+							title	: {
+								type: 'outside'
+							},
+							thumbs	: {
+								width	: 50,
+								height	: 50
+							},
+							overlay : {
+			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
+			        }
+						}
+					});
+					// .fancybox({
+					// 	openEasing: 'elastic',
+					// 	helpers:  {
+			  //       overlay : {
+			  //           css: {'background-color' : 'rgba(0,0,0,0.7)'}
+			  //       }
+				 //    }
+					// });
 
 				});
 
