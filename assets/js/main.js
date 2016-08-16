@@ -144,22 +144,6 @@
 			        }
 						}
 					});
-					$(".stills").fancybox({
-						prevEffect	: 'none',
-						nextEffect	: 'none',
-						helpers	: {
-							title	: {
-								type: 'outside'
-							},
-							thumbs	: {
-								width	: 50,
-								height	: 50
-							},
-							overlay : {
-			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
-			        }
-						}
-					});
 					$(".resume").fancybox({
 						prevEffect	: 'none',
 						nextEffect	: 'none',
@@ -174,7 +158,8 @@
 							overlay : {
 			            css: {'background-color' : 'rgba(0,0,0,0.7)'}
 			        }
-						}
+						},
+						type:'iframe'
 					});
 					// .fancybox({
 					// 	openEasing: 'elastic',
